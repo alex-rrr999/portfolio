@@ -1311,7 +1311,7 @@ a:link, a:visited {
     height: 50%;
     width: 50%;
     padding: 5rem; 
-    margin-top: 7rem;
+    margin-top: 1rem;
   }
   
   .footer-wrapper .images {
@@ -1422,7 +1422,7 @@ a:link, a:visited {
       height:50%;
       box-shadow: 0.5rem 0.5rem 0rem #072E5B;
     
-      margin-top: 0rem;
+      margin-top: 1rem;
     
       top: 50%;
       left: 50%;
@@ -1586,7 +1586,7 @@ a:link, a:visited {
   justify-content: center;
   background-color: #072E5B;
   margin-top: -25rem;
-  margin-bottom: -40rem;
+  margin-bottom: -37rem;
 
 }
 
