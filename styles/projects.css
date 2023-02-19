@@ -1567,7 +1567,7 @@ a:link, a:visited {
       align-items: center;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       grid-template-rows: repeat(auto-fit, minmax(600px, 1fr));
-      margin-top: 12rem;
+      margin-top: 14rem;
     }
     
   
