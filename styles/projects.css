@@ -1422,7 +1422,7 @@ a:link, a:visited {
       height:50%;
       box-shadow: 0.5rem 0.5rem 0rem #072E5B;
     
-      margin-top: 2rem;
+      margin-top: 0rem;
     
       top: 50%;
       left: 50%;
@@ -1542,10 +1542,10 @@ a:link, a:visited {
       /* display: inline; */
     
       transition: ease 0.2s;
-      line-height: 2.3rem;
+      line-height: 2.1rem;
       color: #999999;
       font-family: 'Fira Code', Consolas, monospace;
-      font-size: 1.4em;
+      font-size: 1.2em;
       font-variant-ligatures: contextual;
       margin-top: -2rem;
       padding-bottom: 1rem;
@@ -1578,7 +1578,6 @@ a:link, a:visited {
   justify-content: center;
   background-color: #072E5B;
   margin-top: 0rem;
-  margin-bottom: -20rem;
 
 }
 
