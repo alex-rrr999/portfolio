@@ -1301,7 +1301,6 @@ a:link, a:visited {
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     max-height: calc(100vh - 55rem);
     overflow: none;
-    
   }
   
   .footer-wrapper {
@@ -1312,6 +1311,7 @@ a:link, a:visited {
     height: 50%;
     width: 50%;
     padding: 5rem; 
+    margin-top: 7rem;
   }
   
   .footer-wrapper .images {
@@ -1585,8 +1585,8 @@ a:link, a:visited {
   align-items: center;
   justify-content: center;
   background-color: #072E5B;
-  /* margin-top: -30rem; */
-  margin-bottom: -35rem;
+  margin-top: -25rem;
+  margin-bottom: -40rem;
 
 }
 
