@@ -1,0 +1,1598 @@
+:root {
+  --background-color: #011627;
+  --main-font-color: #060606;
+  --link-color: #A7DBF7;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--main-font-color);
+  font-family: 'Fira Code', Consolas, monospace;
+  user-select: none;
+  opacity: 1; 
+  transition: opacity 0.2s ease;
+}
+
+
+html {
+  background-color: var(--background-color) !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.2s ease-in;
+}
+
+
+body.fade-out {
+  opacity: 0;
+}
+
+
+
+/* DEMO-SPECIFIC STYLES */
+
+span {
+  border-right: .1em solid;
+  color: #A7DBF7;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+/* stolen from  https://css-tricks.com/snippets/css/typewriter-effect/*/
+
+
+
+.github-prev {
+  position: relative;
+
+  opacity: 1;
+  transition: ease 0.2s;
+
+  border: 0.4rem solid #072E5B;
+  width:70%;
+  height:70%;
+  box-shadow: 0.5rem 0.5rem 0rem #072E5B;
+
+  margin-top: 2rem;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* 
+.github-prev .pfp {
+  position: absolute;
+  border: 0.3rem solid #072E5B;
+  box-shadow: 0.01rem 0.01rem 0px #0c0202;
+  pointer-events: all;
+  max-width: 4rem;
+  max-height: 4rem;
+  display: inline;
+
+  top: 50%;
+  left: 10%;
+  transform: translate(0, -50%);
+  z-index: 2;
+}
+ */
+
+
+.github-prev .left {
+  margin-left: 1rem;
+  text-align: left;
+  transition: ease 0.2s;
+  line-height: 2.7rem;
+  color: #999999;
+  font-family: 'Fira Code', Consolas, monospace;
+  font-size: 2em;
+  font-variant-ligatures: contextual;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  pointer-events: all;
+  color: #219FD5;
+  opacity: 1;
+  /* background-color: #A7DBF7; */
+  max-width: 29rem;
+}
+
+.github-prev .left:hover {
+  opacity: 0.5;
+}
+
+
+.github-prev .left {
+  transition: ease 0.2s;
+  opacity: 1;
+}
+
+
+
+
+
+.github-prev .right {
+  float: right;
+  margin-right: 3rem;
+  text-align: right;
+  transition: ease 0.2s;
+  line-height: 2.7rem;
+  font-family: 'Fira Code', Consolas, monospace;
+  font-size: 2em;
+  font-variant-ligatures: contextual;
+
+  margin-top: -3.3rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  pointer-events: all;
+  color: #9791FC;
+  /* color: #87AFF4; */
+
+
+}
+
+.github-prev .right:hover {
+  opacity: 0.5;
+}
+
+
+.github-prev .right {
+  transition: ease 0.2s;
+  opacity: 1;
+}
+
+
+
+.github-prev .right img {
+  position: relative;
+  border: 0.3rem solid #072E5B;
+  box-shadow: 0.01rem 0.01rem 0px #0c0202;
+  pointer-events: all;
+  max-width: 4rem;
+  max-height: 4rem;
+  /* display: inline; */
+
+  top: 50%;
+  left: 10%;
+  transform: translate(0, -50%);
+  z-index: 2;
+}
+
+
+
+
+.github-comments {
+  margin-left: 1rem;
+  text-align: center;
+  /* display: inline; */
+
+  transition: ease 0.2s;
+  line-height: 2.7rem;
+  color: #999999;
+  font-family: 'Fira Code', Consolas, monospace;
+  font-size: 2em;
+  font-variant-ligatures: contextual;
+  margin-top: -2rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+/* #github-iframe {
+  height: calc(100vh - 50px); /* Subtract the height of the header from the viewport height */
+
+
+
+  /* width: 50rem; */
+  /* border: none;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c9c9c9;
+  border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* hidden */
+
+
+.topnav {
+  opacity: 0;
+  pointer-events: none;
+  touch-action: none;
+
+}
+
+
+.menu-bar {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+  touch-action: none;
+}
+
+
+/* */
+
+
+
+#Navigation {
+  position: relative;
+  top: 0;
+  left: 0;
+  max-width: 1920px;
+  margin: auto;
+  transition: opacity 0.4s;  
+  opacity: 1;
+
+
+}
+
+
+
+
+
+
+
+#Navigation .nav {
+  height: 5rem;
+}
+
+#Navigation .nav .nav-tabs {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 2.5em;
+  color: var(--link-color);
+  list-style: none;
+  font-family: 'Montserrat', Consolas, monospace;
+
+
+
+}
+
+
+
+.nav-tabs li:hover a {
+  transition: ease 0.2s;
+  opacity: 0.5;
+}
+
+.nav-tabs a {
+  transition: ease 0.2s;
+  opacity: 1;
+}
+
+
+
+
+#line {
+  color: var(--link-color);
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #EC9CD2;
+  text-decoration-thickness: 0.2rem;
+}
+
+a:link, a:visited {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+#Navigation .nav .nav-tabs .a {
+  color: var(--link-color);
+  text-decoration: none;
+
+
+
+}
+
+
+#Home {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(600px, 1fr));
+  margin-top: 3.5rem;
+}
+
+.home-banner {
+  text-align: center;
+}
+
+.banner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #072E5B;
+  margin-bottom: -10rem;
+}
+
+#Home .home-name {
+  font-family: 'Fira Code', Consolas, monospace;
+  font-size: 3.1em;
+  line-height: 5rem;
+  color: #A7DBF7;
+  transition: ease 1s;
+  z-index: 1;
+}
+
+
+
+#Home .home-comments {
+  margin-left: 20rem;
+  text-align: left;
+  transition: ease 0.2s;
+  line-height: 2.5rem;
+  color: #9791FC;
+  font-family: 'Fira Code', Consolas, monospace;
+  font-size: 2em;
+  /* font-variant-ligatures: contextual; */
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 15rem;
+}
+
+
+
+
+
+
+  @keyframes blink {
+    0% { opacity: 1; } 
+    50% { opacity: 0; } 
+  }
+
+
+  #Footer {
+    position: absolute;
+    width: 100%;
+    bottom: -3rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    max-height: calc(100vh - 48rem);
+    overflow: none;
+  }
+  
+  .footer-wrapper {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    padding: 5rem; 
+  }
+  
+  .footer-wrapper .images {
+    width: 4rem;
+    max-width: 4rem;
+    min-width: 3rem;
+    height: auto;
+    margin: 2rem;
+    transition: ease 0.2s;
+    opacity: 1;
+  }
+
+  .footer-wrapper .images:hover{
+    transition: ease 0.2s;
+    opacity: 0.5;
+  }
+
+
+
+
+
+/* smallerishish */
+@media (max-width: 970px) {
+
+
+
+
+
+
+  .github-prev {
+    position: relative;
+  
+    opacity: 1;
+    transition: ease 0.2s;
+  
+    border: 0.4rem solid #072E5B;
+    width:70%;
+    height:50%;
+    box-shadow: 0.5rem 0.5rem 0rem #072E5B;
+  
+    margin-top: 2rem;
+  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* 
+  .github-prev .pfp {
+    position: absolute;
+    border: 0.3rem solid #072E5B;
+    box-shadow: 0.01rem 0.01rem 0px #0c0202;
+    pointer-events: all;
+    max-width: 4rem;
+    max-height: 4rem;
+    display: inline;
+  
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+    z-index: 2;
+  }
+   */
+  
+  
+  .github-prev .left {
+    margin-left: 1rem;
+    text-align: left;
+    transition: ease 0.2s;
+    line-height: 2.7rem;
+    color: #999999;
+    font-family: 'Fira Code', Consolas, monospace;
+    font-size: 1.6em;
+    font-variant-ligatures: contextual;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    pointer-events: all;
+    color: #219FD5;
+    opacity: 1;
+    /* background-color: #A7DBF7; */
+    max-width: 29rem;
+    white-space: nowrap;
+
+
+
+  }
+  
+  .github-prev .left:hover {
+    opacity: 0.5;
+  }
+  
+  
+  .github-prev .left {
+    transition: ease 0.2s;
+    opacity: 1;
+  }
+  
+  
+  
+  
+  
+  .github-prev .right {
+    float: right;
+    margin-right: 3rem;
+    text-align: right;
+    transition: ease 0.2s;
+    line-height: 2.7rem;
+    font-family: 'Fira Code', Consolas, monospace;
+    font-size: 1.7em;
+    font-variant-ligatures: contextual;
+  
+    margin-top: -3.3rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    pointer-events: all;
+    color: #9791FC;
+    /* color: #87AFF4; */
+  
+  
+  }
+  
+  .github-prev .right:hover {
+    opacity: 0.5;
+  }
+  
+  
+  .github-prev .right {
+    transition: ease 0.2s;
+    opacity: 1;
+  }
+  
+  
+  
+  .github-prev .right img {
+    position: relative;
+    border: 0.3rem solid #072E5B;
+    box-shadow: 0.01rem 0.01rem 0px #0c0202;
+    pointer-events: all;
+    max-width: 4rem;
+    max-height: 4rem;
+    /* display: inline; */
+  
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+    z-index: 2;
+  }
+  
+  
+  
+  
+  .github-comments {
+    margin-left: 1rem;
+    text-align: center;
+    /* display: inline; */
+  
+    transition: ease 0.2s;
+    line-height: 2.3rem;
+    color: #999999;
+    font-family: 'Fira Code', Consolas, monospace;
+    font-size: 1.4em;
+    font-variant-ligatures: contextual;
+    margin-top: -2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+  
+  
+  
+  
+  
+  
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  #Navigation .nav .nav-tabs  {
+    position: absolute;
+  
+    width: 100%;
+    height: rem;
+    font-size: 1rem;
+    max-width: 100%;
+    transition: opacity 0.4s;  
+    opacity: 0;
+    pointer-events: none;
+    touch-action: none;
+  }
+  
+  
+  
+  
+  #Navigation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    font-size: 1rem;
+    max-width: 100%;
+    transition: opacity 0.4s;  
+    opacity: 1;
+  }
+  
+  
+  
+  
+  
+  
+  #Home {
+    padding-top: 20rem;
+    width: 100%;
+    height: 3.8rem;
+    backface-visibility: visible; 
+    
+  }
+  
+  
+  
+  
+  #Home .home-comments {
+    transition: ease 0.2s;
+    font-size: 1.5em;
+    line-height: 3rem;
+    padding-bottom: 0rem;
+    margin-bottom: 20rem;
+  }
+  
+  
+
+  .banner-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #072E5B;
+    margin-bottom: -11rem;
+    margin-top: 7rem;
+  }
+  
+
+
+  
+  #Footer {
+    position: absolute;
+    width: 100%;
+    bottom: -7rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    max-height: calc(100vh - 48rem);
+    overflow: none;
+  }
+  
+  .footer-wrapper {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    padding: 5rem; 
+  }
+  
+  .footer-wrapper .images {
+    width: 4rem;
+    max-width: 4rem;
+    min-width: 3rem;
+    height: auto;
+    transition: ease 0.2s;
+    margin: 0.5rem;
+  }
+
+
+
+
+
+  
+    .topnav {
+      position: relative;
+      overflow: hidden;
+      transition: ease 0.2s;
+      padding-top: 0.3rem;
+      padding-bottom: -4rem;
+      border: 0px black solid;
+      border-bottom-left-radius: 0;
+      border-bottom-width: 0.3rem;
+      border-bottom-color: #011627;
+      background-color: #072E5B;
+      z-index: 5;
+      opacity: 1;
+      pointer-events: all;
+      touch-action: all;
+      font-family: 'Montserrat', Consolas, monospace;
+    }
+  
+  
+  
+  
+    .topnav #myLinks {
+      display: block;
+      height: 0;
+      transition: ease-in 0.1s; 
+      /* this one actually affects */
+      padding: 0;  
+      line-height: 120%;
+    }
+  
+    .topnav #myLinks.show {
+      height: 12rem; 
+      line-height: 1.7rem;
+    }
+  
+    .topnav a {
+      /* color: #219FD5; */
+      padding: 1rem 1rem;
+      font-size: 2.1rem;
+      display: block;
+      font-style: initial;
+    }
+  
+  
+  
+    .topnav a.icon {
+      /* background: black; */
+      display: block;
+      position: absolute;
+      left: auto;
+      right: 0;
+      top: 0.25rem;
+      width: 15%;
+      height: 4.233rem;
+      transition: ease 0.2s;
+      /* background-color: #dfb83b; */
+    }
+  
+    .menu-bar {
+      width: 3rem;
+      height: 3rem;
+      padding-bottom: 0.51rem;
+      opacity: 1;
+      /* max-width: 10rem; */
+      
+    }
+  }
+
+
+
+/* smallerishish */
+@media (max-width: 640px) {
+
+
+
+
+
+
+  .github-prev {
+    position: relative;
+  
+    opacity: 1;
+    transition: ease 0.2s;
+  
+    border: 0.4rem solid #072E5B;
+    width:90%;
+    height:50%;
+    box-shadow: 0.5rem 0.5rem 0rem #072E5B;
+  
+    margin-top: 2rem;
+  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* 
+  .github-prev .pfp {
+    position: absolute;
+    border: 0.3rem solid #072E5B;
+    box-shadow: 0.01rem 0.01rem 0px #0c0202;
+    pointer-events: all;
+    max-width: 4rem;
+    max-height: 4rem;
+    display: inline;
+  
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+    z-index: 2;
+  }
+   */
+  
+  
+  .github-prev .left {
+    margin-left: 1rem;
+    text-align: left;
+    transition: ease 0.2s;
+    line-height: 2.7rem;
+    color: #999999;
+    font-family: 'Fira Code', Consolas, monospace;
+    font-size: 1.6em;
+    font-variant-ligatures: contextual;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    pointer-events: all;
+    color: #219FD5;
+    opacity: 1;
+    /* background-color: #A7DBF7; */
+    max-width: 29rem;
+    white-space: nowrap;
+
+
+
+  }
+  
+  .github-prev .left:hover {
+    opacity: 0.5;
+  }
+  
+  
+  .github-prev .left {
+    transition: ease 0.2s;
+    opacity: 1;
+  }
+  
+  
+  
+  
+  
+  .github-prev .right {
+    float: right;
+    margin-right: 3rem;
+    text-align: right;
+    transition: ease 0.2s;
+    line-height: 2.7rem;
+    font-family: 'Fira Code', Consolas, monospace;
+    font-size: 1.7em;
+    font-variant-ligatures: contextual;
+  
+    margin-top: -3.3rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    pointer-events: all;
+    color: #9791FC;
+    /* color: #87AFF4; */
+  
+  
+  }
+  
+  .github-prev .right:hover {
+    opacity: 0.5;
+  }
+  
+  
+  .github-prev .right {
+    transition: ease 0.2s;
+    opacity: 1;
+  }
+  
+  
+  
+  .github-prev .right img {
+    position: relative;
+    border: 0.3rem solid #072E5B;
+    box-shadow: 0.01rem 0.01rem 0px #0c0202;
+    pointer-events: all;
+    max-width: 4rem;
+    max-height: 4rem;
+    /* display: inline; */
+  
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+    z-index: 2;
+  }
+  
+  
+  
+  
+  .github-comments {
+    margin-left: 1rem;
+    text-align: center;
+    /* display: inline; */
+  
+    transition: ease 0.2s;
+    line-height: 2.3rem;
+    color: #999999;
+    font-family: 'Fira Code', Consolas, monospace;
+    font-size: 1.4em;
+    font-variant-ligatures: contextual;
+    margin-top: -2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+  
+  
+  
+  
+  
+  
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  #Navigation .nav .nav-tabs  {
+    position: absolute;
+  
+    width: 100%;
+    height: rem;
+    font-size: 1rem;
+    max-width: 100%;
+    transition: opacity 0.4s;  
+    opacity: 0;
+    pointer-events: none;
+    touch-action: none;
+  }
+  
+  
+  
+  
+  #Navigation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    font-size: 1rem;
+    max-width: 100%;
+    transition: opacity 0.4s;  
+    opacity: 1;
+  }
+  
+  
+  
+  
+  
+  
+  #Home {
+    padding-top: 20rem;
+    width: 100%;
+    height: 3.8rem;
+    backface-visibility: visible; 
+    
+  }
+  
+  
+  
+  
+  #Home .home-comments {
+    transition: ease 0.2s;
+    font-size: 1.5em;
+    line-height: 3rem;
+    padding-bottom: 0rem;
+    margin-bottom: 20rem;
+  }
+  
+  
+
+  .banner-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #072E5B;
+    margin-bottom: -11rem;
+    margin-top: 7rem;
+  }
+  
+
+
+  
+  #Footer {
+    position: absolute;
+    width: 100%;
+    bottom: -8rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    max-height: calc(100vh - 48rem);
+    overflow: none;
+  }
+  
+  .footer-wrapper {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    padding: 5rem; 
+  }
+  
+  .footer-wrapper .images {
+    width: 4rem;
+    max-width: 4rem;
+    min-width: 3rem;
+    height: auto;
+    transition: ease 0.2s;
+    margin: 0.5rem;
+  }
+
+
+
+
+
+  
+    .topnav {
+      position: relative;
+      overflow: hidden;
+      transition: ease 0.2s;
+      padding-top: 0.3rem;
+      padding-bottom: -4rem;
+      border: 0px black solid;
+      border-bottom-left-radius: 0;
+      border-bottom-width: 0.3rem;
+      border-bottom-color: #011627;
+      background-color: #072E5B;
+      z-index: 5;
+      opacity: 1;
+      pointer-events: all;
+      touch-action: all;
+      font-family: 'Montserrat', Consolas, monospace;
+    }
+  
+  
+  
+  
+    .topnav #myLinks {
+      display: block;
+      height: 0;
+      transition: ease-in 0.1s; 
+      /* this one actually affects */
+      padding: 0;  
+      line-height: 120%;
+    }
+  
+    .topnav #myLinks.show {
+      height: 12rem; 
+      line-height: 1.7rem;
+    }
+  
+    .topnav a {
+      /* color: #219FD5; */
+      padding: 1rem 1rem;
+      font-size: 2.1rem;
+      display: block;
+      font-style: initial;
+    }
+  
+  
+  
+    .topnav a.icon {
+      /* background: black; */
+      display: block;
+      position: absolute;
+      left: auto;
+      right: 0;
+      top: 0.25rem;
+      width: 15%;
+      height: 4.233rem;
+      transition: ease 0.2s;
+      /* background-color: #dfb83b; */
+    }
+  
+    .menu-bar {
+      width: 3rem;
+      height: 3rem;
+      padding-bottom: 0.51rem;
+      opacity: 1;
+      /* max-width: 10rem; */
+      
+    }
+  }
+
+
+
+
+
+
+/* iphone again */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* smallish */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* iphone 12 */
+@media (max-width: 428px) {
+
+
+
+  /* iphone 12 pro */
+  #Navigation .nav .nav-tabs  {
+    position: absolute;
+  
+    width: 100%;
+    height: rem;
+    font-size: 1rem;
+    max-width: 100%;
+    transition: opacity 0.4s;  
+    opacity: 0;
+    pointer-events: none;
+    touch-action: none;
+  }
+  
+  
+  
+  
+  #Navigation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    font-size: 1rem;
+    max-width: 100%;
+    transition: opacity 0.4s;  
+    opacity: 1;
+  }
+  
+  
+  
+  
+  
+  
+  #Home {
+    padding-top: 50%;
+    width: 100%;
+    height: 3.8rem;
+    backface-visibility: visible; 
+    
+  }
+  
+  
+  
+  
+  #Home .home-comments {
+    transition: ease 0.2s;
+    font-size: 1.5em;
+    line-height: 3rem;
+    padding-bottom: 25rem;
+    margin-bottom: 0rem;
+  }
+  
+  
+  
+  #Footer {
+    position: absolute;
+    width: 100%;
+    bottom: -8rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    max-height: calc(100vh - 55rem);
+    overflow: none;
+    
+  }
+  
+  .footer-wrapper {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    padding: 5rem; 
+  }
+  
+  .footer-wrapper .images {
+    width: 4rem;
+    max-width: 4rem;
+    min-width: 3rem;
+    height: auto;
+    transition: ease 0.2s;
+    margin: 0.5rem;
+  }
+
+  
+  
+
+  
+  
+  
+  
+    .topnav {
+      position: relative;
+      overflow: hidden;
+      transition: ease 0.2s;
+      padding-top: 0.3rem;
+      padding-bottom: -4rem;
+      border: 0px black solid;
+      border-bottom-left-radius: 0;
+      border-bottom-width: 0.3rem;
+      border-bottom-color: #011627;
+      background-color: #072E5B;
+      z-index: 5;
+      opacity: 1;
+      pointer-events: all;
+      touch-action: all;
+
+
+
+    }
+  
+  
+  
+    .topnav #myLinks {
+      display: block;
+      height: 0;
+      transition: ease-in 0.2s;
+      padding: 0;  
+      line-height: 120%;
+    }
+  
+    .topnav #myLinks.show {
+      height: 12rem; /* set to the height of the dropdown menu */
+      /* padding: 1rem; */
+      line-height: 1.7rem;
+    }
+  
+    .topnav a {
+      color: #219FD5;
+      padding: 1rem 1rem;
+      font-size: 2.1rem;
+      display: block;
+      font-style: initial;
+      
+    }
+  
+  
+  
+  
+    .topnav a.icon {
+      /* background: black; */
+      display: block;
+      position: absolute;
+      left: auto;
+      right: 0;
+      top: 0.25rem;
+      width: 22%;
+      height: 4.233rem;
+      transition: ease 0.2s;
+      /* background-color: #dfb83b; */
+    }
+  
+    
+
+    .menu-bar {
+      width: 3rem;
+      height: 3rem;
+      top: 0;
+      right: 0;
+      padding-bottom: 0.51rem;
+      opacity: 1;
+      /* max-width: 10rem; */
+      
+    }
+
+
+
+
+
+
+
+
+    .github-prev {
+      position: relative;
+    
+      opacity: 1;
+      transition: ease 0.2s;
+    
+      border: 0.4rem solid #072E5B;
+      width:85%;
+      height:50%;
+      box-shadow: 0.5rem 0.5rem 0rem #072E5B;
+    
+      margin-top: 2rem;
+    
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    /* 
+    .github-prev .pfp {
+      position: absolute;
+      border: 0.3rem solid #072E5B;
+      box-shadow: 0.01rem 0.01rem 0px #0c0202;
+      pointer-events: all;
+      max-width: 4rem;
+      max-height: 4rem;
+      display: inline;
+    
+      top: 50%;
+      left: 10%;
+      transform: translate(0, -50%);
+      z-index: 2;
+    }
+     */
+    
+    
+    .github-prev .left {
+      margin-left: 0.4rem;
+      text-align: left;
+      transition: ease 0.2s;
+      line-height: 2.7rem;
+      color: #999999;
+      font-family: 'Fira Code', Consolas, monospace;
+      font-size: 1.3em;
+      font-variant-ligatures: contextual;
+      margin-top: 1rem;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+      pointer-events: all;
+      color: #219FD5;
+      opacity: 1;
+      /* background-color: #A7DBF7; */
+      max-width: 29rem;
+      white-space: nowrap;
+  
+  
+  
+    }
+    
+    .github-prev .left:hover {
+      opacity: 0.5;
+    }
+    
+    
+    .github-prev .left {
+      transition: ease 0.2s;
+      opacity: 1;
+    }
+    
+    
+    
+
+
+
+    
+    
+    .github-prev .right {
+      float: right;
+      margin-right: 3rem;
+      text-align: right;
+      transition: ease 0.2s;
+      line-height: 2.7rem;
+      font-family: 'Fira Code', Consolas, monospace;
+      font-size: 1.4em;
+      font-variant-ligatures: contextual;
+      margin-right: 1rem;
+      margin-top: -3.3rem;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+      pointer-events: all;
+      color: #9791FC;
+      /* color: #87AFF4; */
+    
+    
+    }
+    
+    .github-prev .right:hover {
+      opacity: 0.5;
+    }
+    
+    
+    .github-prev .right {
+      transition: ease 0.2s;
+      opacity: 1;
+    }
+    
+    
+    
+    .github-prev .right img {
+      position: relative;
+      border: 0.3rem solid #072E5B;
+      box-shadow: 0.01rem 0.01rem 0px #0c0202;
+      pointer-events: all;
+      max-width: 4rem;
+      max-height: 4rem;
+      /* display: inline; */
+    
+      top: 50%;
+      left: 10%;
+      transform: translate(0, -50%);
+      z-index: 2;
+    }
+    
+    
+    
+    
+    .github-comments {
+      margin-left: 1rem;
+      text-align: center;
+      /* display: inline; */
+    
+      transition: ease 0.2s;
+      line-height: 2.3rem;
+      color: #999999;
+      font-family: 'Fira Code', Consolas, monospace;
+      font-size: 1.4em;
+      font-variant-ligatures: contextual;
+      margin-top: -2rem;
+      padding-bottom: 1rem;
+
+      margin-left: 0.2rem;
+      margin-right: 0.2rem;
+      margin-bottom: 2rem;
+    
+    
+    
+    
+    
+    
+    }
+    
+    
+  
+  
+  
+.home-banner {
+  text-align: center;
+}
+
+.banner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #072E5B;
+  margin-top: 20rem;
+  margin-bottom: -20rem;
+
+}
+
+  
+  
+  
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
