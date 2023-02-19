@@ -1562,22 +1562,31 @@ a:link, a:visited {
     }
     
     
-  
+    #Home {
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-rows: repeat(auto-fit, minmax(600px, 1fr));
+      margin-top: 12rem;
+    }
+    
   
   
 .home-banner {
   text-align: center;
-  margin-top: 20rem;
+  /* margin-top: 20rem; */
   
 
 }
 
 .banner-wrapper {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #072E5B;
-  margin-top: -30rem;
+  /* margin-top: -30rem; */
+  margin-bottom: -15rem;
 
 }
 
