@@ -1567,6 +1567,9 @@ a:link, a:visited {
   
 .home-banner {
   text-align: center;
+  margin-top: 20rem;
+  
+
 }
 
 .banner-wrapper {
@@ -1574,7 +1577,7 @@ a:link, a:visited {
   align-items: center;
   justify-content: center;
   background-color: #072E5B;
-  margin-top: 20rem;
+  margin-top: 0rem;
   margin-bottom: -20rem;
 
 }
