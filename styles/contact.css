@@ -395,7 +395,7 @@ a:link, a:visited {
   
   
   #Home .home-comments {
-    transition: ease 0.2s;
+    /* transition: ease 0.2s; */
     font-size: 1.5em;
     line-height: 3rem;
     padding-bottom: 25rem;
@@ -431,7 +431,7 @@ a:link, a:visited {
     max-width: 4rem;
     min-width: 3rem;
     height: auto;
-    transition: ease 0.2s;
+    /* transition: ease 0.2s; */
     margin: 0.5rem;
   }
 
@@ -493,7 +493,7 @@ a:link, a:visited {
       top: 0.25rem;
       width: 15%;
       height: 4.233rem;
-      transition: ease 0.2s;
+      /* transition: ease 0.2s; */
       /* background-color: #dfb83b; */
     }
   
@@ -644,7 +644,7 @@ a:link, a:visited {
     .topnav #myLinks {
       display: block;
       height: 0;
-      transition: ease-in 0.2s;
+      transition: ease-in 0.1s; 
       padding: 0;  
       line-height: 120%;
     }

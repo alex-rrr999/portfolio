@@ -1355,7 +1355,7 @@ a:link, a:visited {
     .topnav #myLinks {
       display: block;
       height: 0;
-      transition: ease-in 0.2s;
+      transition: ease-in 0.1s; 
       padding: 0;  
       line-height: 120%;
     }
