@@ -438,7 +438,7 @@ a:link, a:visited {
     transition: ease 0.2s;
   
     border: 0.4rem solid #072E5B;
-    width:70%;
+    width:80%;
     height:70%;
     box-shadow: 0.5rem 0.5rem 0rem #072E5B;
   
@@ -763,7 +763,7 @@ a:link, a:visited {
     transition: ease 0.2s;
   
     border: 0.4rem solid #072E5B;
-    width:70%;
+    width:90%;
     height:70%;
     box-shadow: 0.5rem 0.5rem 0rem #072E5B;
   
@@ -799,7 +799,7 @@ a:link, a:visited {
     line-height: 2.7rem;
     color: #999999;
     font-family: 'Fira Code', Consolas, monospace;
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-variant-ligatures: contextual;
     margin-top: 1rem;
     padding-bottom: 1rem;
@@ -1349,7 +1349,7 @@ a:link, a:visited {
       transition: ease 0.2s;
     
       border: 0.4rem solid #072E5B;
-      width:70%;
+      width:75%;
       height:70%;
       box-shadow: 0.5rem 0.5rem 0rem #072E5B;
     
