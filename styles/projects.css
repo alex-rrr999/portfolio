@@ -1349,7 +1349,7 @@ a:link, a:visited {
       transition: ease 0.2s;
     
       border: 0.4rem solid #072E5B;
-      width:75%;
+      width:85%;
       height:70%;
       box-shadow: 0.5rem 0.5rem 0rem #072E5B;
     
@@ -1468,7 +1468,7 @@ a:link, a:visited {
 
       margin-left: 0.2rem;
       margin-right: 0.2rem;
-      margin-bottom: 2rem;
+      margin-bottom: 0.8rem;
     
     
     
