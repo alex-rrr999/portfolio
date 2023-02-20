@@ -1363,13 +1363,13 @@ a:link, a:visited {
     
     
     .github-prev .left {
-      margin-left: 0.4rem;
+      margin-left: 0.3rem;
       text-align: left;
       transition: ease 0.2s;
       line-height: 2.7rem;
       color: #999999;
       font-family: 'Fira Code', Consolas, monospace;
-      font-size: 1.13em;
+      font-size: 1.10em;
       font-variant-ligatures: contextual;
       margin-top: 1rem;
       padding-bottom: 1rem;
