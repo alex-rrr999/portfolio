@@ -59,13 +59,9 @@ span {
 }
 
 
-/* stolen from  https://css-tricks.com/snippets/css/typewriter-effect/*/
-
-
 
 .github-prev {
   position: relative;
-
   opacity: 1;
   transition: ease 0.2s;
 
@@ -74,28 +70,12 @@ span {
   height:70%;
   box-shadow: 0.5rem 0.5rem 0rem #072E5B;
 
-  margin-top: 2rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
 
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-/* 
-.github-prev .pfp {
-  position: absolute;
-  border: 0.3rem solid #072E5B;
-  box-shadow: 0.01rem 0.01rem 0px #0c0202;
-  pointer-events: all;
-  max-width: 4rem;
-  max-height: 4rem;
-  display: inline;
 
-  top: 50%;
-  left: 10%;
-  transform: translate(0, -50%);
-  z-index: 2;
+  margin: 0 auto;
 }
- */
 
 
 .github-prev .left {
@@ -115,6 +95,7 @@ span {
   opacity: 1;
   /* background-color: #A7DBF7; */
   max-width: 29rem;
+  white-space: nowrap;
 }
 
 .github-prev .left:hover {
@@ -125,6 +106,25 @@ span {
 .github-prev .left {
   transition: ease 0.2s;
   opacity: 1;
+}
+
+.nametext {
+  margin: 0 auto;
+  text-align: center;
+  transition: ease 0.2s;
+  line-height: 2.7rem;
+  font-family: 'Fira Code', Consolas, monospace;
+  font-size: 2em;
+  font-variant-ligatures: contextual;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: -6rem;
+  pointer-events: all !important;
+  opacity: 1;
+}
+
+.nametext:hover {
+  opacity: 0.5;
 }
 
 
@@ -202,60 +202,6 @@ span {
 
 
 }
-
-
-
-
-
-
-/* #github-iframe {
-  height: calc(100vh - 50px); /* Subtract the height of the header from the viewport height */
-
-
-
-  /* width: 50rem; */
-  /* border: none;
-  overflow: hidden;
-  overflow-y: scroll;
-}
-
-
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -396,7 +342,7 @@ a:link, a:visited {
   align-items: center;
   justify-content: center;
   background-color: #072E5B;
-  margin-bottom: -10rem;
+  margin-bottom: -8rem;
 }
 
 #Home .home-name {
@@ -421,7 +367,7 @@ a:link, a:visited {
   /* font-variant-ligatures: contextual; */
   margin-top: 1rem;
   padding-bottom: 1rem;
-  margin-bottom: 15rem;
+  margin-bottom: 6rem;
 }
 
 
@@ -455,6 +401,8 @@ a:link, a:visited {
     height: 50%;
     width: 50%;
     padding: 5rem; 
+    margin-top: 20rem;
+
   }
   
   .footer-wrapper .images {
@@ -486,38 +434,22 @@ a:link, a:visited {
 
   .github-prev {
     position: relative;
-  
     opacity: 1;
     transition: ease 0.2s;
   
     border: 0.4rem solid #072E5B;
     width:70%;
-    height:50%;
+    height:70%;
     box-shadow: 0.5rem 0.5rem 0rem #072E5B;
   
-    margin-top: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
   
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  
+    margin: 0 auto;
   }
-  /* 
-  .github-prev .pfp {
-    position: absolute;
-    border: 0.3rem solid #072E5B;
-    box-shadow: 0.01rem 0.01rem 0px #0c0202;
-    pointer-events: all;
-    max-width: 4rem;
-    max-height: 4rem;
-    display: inline;
   
-    top: 50%;
-    left: 10%;
-    transform: translate(0, -50%);
-    z-index: 2;
-  }
-   */
-  
+
   
   .github-prev .left {
     margin-left: 1rem;
@@ -704,8 +636,8 @@ a:link, a:visited {
     align-items: center;
     justify-content: center;
     background-color: #072E5B;
-    margin-bottom: -11rem;
-    margin-top: 7rem;
+    margin-bottom: -22rem;
+    margin-top: 0rem;
   }
   
 
@@ -827,21 +759,21 @@ a:link, a:visited {
 
   .github-prev {
     position: relative;
-  
     opacity: 1;
     transition: ease 0.2s;
   
     border: 0.4rem solid #072E5B;
-    width:90%;
-    height:50%;
+    width:70%;
+    height:70%;
     box-shadow: 0.5rem 0.5rem 0rem #072E5B;
   
-    margin-top: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
   
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  
+    margin: 0 auto;
   }
+  
   /* 
   .github-prev .pfp {
     position: absolute;
@@ -1045,8 +977,8 @@ a:link, a:visited {
     align-items: center;
     justify-content: center;
     background-color: #072E5B;
-    margin-bottom: -11rem;
-    margin-top: 7rem;
+    margin-bottom: -20rem;
+    margin-top: 0rem;
   }
   
 
@@ -1311,7 +1243,7 @@ a:link, a:visited {
     height: 50%;
     width: 50%;
     padding: 5rem; 
-    margin-top: 1rem;
+    margin-top: 7rem;
   }
   
   .footer-wrapper .images {
@@ -1413,37 +1345,21 @@ a:link, a:visited {
 
     .github-prev {
       position: relative;
-    
       opacity: 1;
       transition: ease 0.2s;
     
       border: 0.4rem solid #072E5B;
-      width:85%;
-      height:50%;
+      width:70%;
+      height:70%;
       box-shadow: 0.5rem 0.5rem 0rem #072E5B;
     
-      margin-top: 1rem;
+      margin-top: 0rem;
+      margin-bottom: 0rem;
     
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    /* 
-    .github-prev .pfp {
-      position: absolute;
-      border: 0.3rem solid #072E5B;
-      box-shadow: 0.01rem 0.01rem 0px #0c0202;
-      pointer-events: all;
-      max-width: 4rem;
-      max-height: 4rem;
-      display: inline;
     
-      top: 50%;
-      left: 10%;
-      transform: translate(0, -50%);
-      z-index: 2;
+      margin: 0 auto;
     }
-     */
+    
     
     
     .github-prev .left {
@@ -1453,7 +1369,7 @@ a:link, a:visited {
       line-height: 2.7rem;
       color: #999999;
       font-family: 'Fira Code', Consolas, monospace;
-      font-size: 1.3em;
+      font-size: 1.13em;
       font-variant-ligatures: contextual;
       margin-top: 1rem;
       padding-bottom: 1rem;
@@ -1571,28 +1487,34 @@ a:link, a:visited {
     }
     
   
-  
-.home-banner {
-  text-align: center;
-  /* margin-top: 20rem; */
-  
-
-}
-
-.banner-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #072E5B;
-  margin-top: -25rem;
-  margin-bottom: -37rem;
-
-}
+    .home-banner {
+      text-align: center;
+    }
+    
+    .banner-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #072E5B;
+      margin-bottom: -25rem;
+    }
 
   
   
-  
+    .nametext {
+      margin: 0 auto;
+      text-align: center;
+      transition: ease 0.2s;
+      line-height: 2.7rem;
+      font-family: 'Fira Code', Consolas, monospace;
+      font-size: 1.6em;
+      font-variant-ligatures: contextual;
+      margin-top: 1rem;
+      padding-bottom: 1rem;
+      margin-bottom: -6rem;
+      pointer-events: all !important;
+      opacity: 1;
+    }
 
 
 

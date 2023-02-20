@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
       
       // Wait 
 
-      if (href === "https://www.instagram.com/alex.rrr999/" || href === "https://github.com/alex-rrr999" || href === "https://www.linkedin.com/in/alex-rrr999/" || href === "https://www.youtube.com/@alex-rrr999" || href === "https://github.com/alex-rrr999/monitor-api-test" || href === "https://github.com/alex-rrr999/Portfolio")
+      if (href === "https://www.instagram.com/alex.rrr999/" || href === "https://github.com/alex-rrr999" || href === "https://www.linkedin.com/in/alex-rrr999/" || href === "https://www.youtube.com/@alex-rrr999" || href === "https://github.com/alex-rrr999/monitor-api-test" || href === "https://github.com/alex-rrr999/Portfolio" || href === "https://github.com/alex-rrr999/readme-helper")
       setTimeout(function() {
         // window.location.href = href;
         window.open(href);
