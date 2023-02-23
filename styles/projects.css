@@ -1012,6 +1012,7 @@ a:link, a:visited {
     height: 50%;
     width: 50%;
     padding: 5rem; 
+    padding-bottom: 4rem;
   }
   
   .footer-wrapper .images {
@@ -1253,6 +1254,8 @@ a:link, a:visited {
     width: 50%;
     padding: 0rem; 
     margin-top: 3rem;
+    padding-bottom: 10rem;
+
   }
   
   .footer-wrapper .images {
