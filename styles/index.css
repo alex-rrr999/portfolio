@@ -157,17 +157,28 @@ span {
   font-size: 2.5em;
   color: var(--link-color);
   list-style: none;
+  text-decoration: solid;
 
-
+  
 
 }
 
 
+@keyframes undline {
+  0% {text-decoration: underline;  text-decoration-thickness: 0rem;}
+  100% {text-decoration: underline;  text-decoration-thickness: 0.24rem;}
+}
 
 .nav-tabs li:hover a {
   transition: ease 0.2s;
-  opacity: 0.5;
+  text-decoration: underline;
+  opacity: 0.9;
+  animation: undline 0.1s;
+  animation-fill-mode: forwards;
+
 }
+
+
 
 .nav-tabs a {
   transition: ease 0.2s;
@@ -178,10 +189,12 @@ span {
 
 #line {
   color: var(--link-color);
-  text-decoration: underline;
+  text-decoration: underline !important;
   text-decoration-style: solid;
-  text-decoration-color: #EC9CD2;
-  text-decoration-thickness: 0.2rem;
+  text-decoration-color: #A7DBF7;
+
+  /* text-decoration-color: #EC9CD2; */
+  text-decoration-thickness: 0.24rem;
 }
 
 a:link, a:visited {
@@ -203,11 +216,11 @@ a:link, a:visited {
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(600px, 1fr));
+  max-height: 0rem;
 }
 
 .home-banner {
   text-align: center;
-
 }
 
 .banner-wrapper {
@@ -215,6 +228,7 @@ a:link, a:visited {
   align-items: center;
   justify-content: center;
   background-color: #072E5B;
+  margin-top: -6rem;
 }
 
 #Home .home-name {
@@ -237,7 +251,6 @@ a:link, a:visited {
   font-size: 2em;
   font-variant-ligatures: contextual;
   margin-top: 1rem;
-  padding-bottom: 1rem;
   margin-bottom: 0rem;
 }
 
@@ -258,24 +271,40 @@ a:link, a:visited {
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
-    max-height: calc(100vh - 32rem);
+    max-height: calc(100vh - 24rem);
     overflow: none;
+    margin-bottom: 0rem;
 
     /* border: 0px black solid;
     border-top-style: solid;
     border-top-width: 1rem;
     border-top-color: #072E5B; */
     /* background-color: #072E5B; */
+
+
+
+
+
+
+
+
+    
   }
   
   .footer-wrapper {
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 50%;
     width: 50%;
-    padding: 5rem; 
+    margin-top: 7rem;
+    /* padding: 0rem;  */
+
+
+
+
+    
   }
   
   .footer-wrapper .images {
@@ -286,6 +315,14 @@ a:link, a:visited {
     margin: 2rem;
     transition: ease 0.2s;
     opacity: 1;
+
+    user-select: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
   }
 
   .footer-wrapper .images:hover{

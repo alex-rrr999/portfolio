@@ -270,30 +270,37 @@ span {
 
 
 
-#Navigation .nav {
-  height: 5rem;
-}
-
 #Navigation .nav .nav-tabs {
   height: inherit;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  font-family: 'Montserrat', Consolas, monospace;
   font-size: 2.5em;
   color: var(--link-color);
   list-style: none;
-  font-family: 'Montserrat', Consolas, monospace;
+  text-decoration: solid;
 
-
+  
 
 }
 
 
+@keyframes undline {
+  0% {text-decoration: underline;  text-decoration-thickness: 0rem;}
+  100% {text-decoration: underline;  text-decoration-thickness: 0.24rem;}
+}
 
 .nav-tabs li:hover a {
   transition: ease 0.2s;
-  opacity: 0.5;
+  text-decoration: underline;
+  opacity: 0.9;
+  animation: undline 0.1s;
+  animation-fill-mode: forwards;
+
 }
+
+
 
 .nav-tabs a {
   transition: ease 0.2s;
@@ -302,13 +309,14 @@ span {
 
 
 
-
 #line {
   color: var(--link-color);
-  text-decoration: underline;
+  text-decoration: underline !important;
   text-decoration-style: solid;
-  text-decoration-color: #EC9CD2;
-  text-decoration-thickness: 0.2rem;
+  text-decoration-color: #A7DBF7;
+
+  /* text-decoration-color: #EC9CD2; */
+  text-decoration-thickness: 0.24rem;
 }
 
 a:link, a:visited {
@@ -401,7 +409,7 @@ a:link, a:visited {
     height: 50%;
     width: 50%;
     padding: 5rem; 
-    margin-top: 20rem;
+    margin-top: 10rem;
 
   }
   

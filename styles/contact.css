@@ -174,10 +174,6 @@ span {
 
 
 
-#Navigation .nav {
-  height: 5rem;
-}
-
 #Navigation .nav .nav-tabs {
   height: inherit;
   display: flex;
@@ -187,17 +183,29 @@ span {
   font-size: 2.5em;
   color: var(--link-color);
   list-style: none;
+  text-decoration: solid;
+  margin-top: 1rem;
 
-
+  
 
 }
 
 
+@keyframes undline {
+  0% {text-decoration: underline;  text-decoration-thickness: 0rem;}
+  100% {text-decoration: underline;  text-decoration-thickness: 0.24rem;}
+}
 
 .nav-tabs li:hover a {
   transition: ease 0.2s;
-  opacity: 0.5;
+  text-decoration: underline;
+  opacity: 0.9;
+  animation: undline 0.1s;
+  animation-fill-mode: forwards;
+
 }
+
+
 
 .nav-tabs a {
   transition: ease 0.2s;
@@ -208,10 +216,12 @@ span {
 
 #line {
   color: var(--link-color);
-  text-decoration: underline;
+  text-decoration: underline !important;
   text-decoration-style: solid;
-  text-decoration-color: #EC9CD2;
-  text-decoration-thickness: 0.2rem;
+  text-decoration-color: #A7DBF7;
+
+  /* text-decoration-color: #EC9CD2; */
+  text-decoration-thickness: 0.24rem;
 }
 
 a:link, a:visited {
@@ -244,6 +254,7 @@ a:link, a:visited {
   align-items: center;
   justify-content: center;
   background-color: #072E5B;
+  margin-top: 9rem;
 }
 
 #Home .home-name {
@@ -313,7 +324,7 @@ a:link, a:visited {
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
-    max-height: calc(100vh - 23rem);
+    max-height: calc(100vh - 40rem);
     overflow: none;
   }
   
