@@ -376,7 +376,8 @@ a:link, a:visited {
     width: 100%;
     height: 3.8rem;
     backface-visibility: visible; 
-    
+    margin-top: 0rem;
+    max-height: 0rem;
   }
   
   
@@ -386,8 +387,8 @@ a:link, a:visited {
     transition: ease 0.2s;
     font-size: 1.5em;
     line-height: 3rem;
-    padding-bottom: 25rem;
-    margin-bottom: 3rem;
+    padding-bottom: 0rem;
+    margin-bottom: 15rem;
   }
   
   
@@ -550,12 +551,14 @@ a:link, a:visited {
   
   
   
+  
   #Home {
-    padding-top: 50%;
+    padding-top: 40%;
     width: 100%;
     height: 3.8rem;
     backface-visibility: visible; 
-
+    max-height: 0rem;
+    
   }
   
   
@@ -563,11 +566,12 @@ a:link, a:visited {
   
   #Home .home-comments {
     transition: ease 0.2s;
-    font-size: 1.5em;
+    font-size: 1.3em;
     line-height: 3rem;
-    padding-bottom: 25rem;
+    padding-bottom: 0rem;
     margin-bottom: 0rem;
   }
+  
   
   
   

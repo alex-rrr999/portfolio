@@ -391,20 +391,18 @@ a:link, a:visited {
     align-items: center;
     height: 50%;
     width: 50%;
-    padding: 0rem; 
-    margin-bottom: -15rem;
+    margin-top: 12rem;
+    padding: 5rem; 
   }
   
   .footer-wrapper .images {
-    width: 4rem;
+    width: 2rem;
     max-width: 4rem;
     min-width: 3rem;
     height: auto;
     transition: ease 0.2s;
-    margin: 1rem;
+    margin: 0.5rem;
   }
-
-
 
 
 
@@ -543,10 +541,11 @@ a:link, a:visited {
   
   
   #Home {
-    padding-top: 50%;
+    padding-top: 85%;
     width: 100%;
     height: 3.8rem;
     backface-visibility: visible; 
+    max-height: 0rem;
     
   }
   
@@ -557,7 +556,7 @@ a:link, a:visited {
     transition: ease 0.2s;
     font-size: 1.3em;
     line-height: 3rem;
-    padding-bottom: 25rem;
+    padding-bottom: 0rem;
     margin-bottom: 0rem;
   }
   
@@ -582,18 +581,19 @@ a:link, a:visited {
     align-items: center;
     height: 50%;
     width: 50%;
-    margin-top: 6rem;
+    margin-top: 12rem;
     padding: 5rem; 
   }
   
   .footer-wrapper .images {
-    width: 2rem;
+    width: 4rem;
     max-width: 4rem;
     min-width: 3rem;
     height: auto;
     transition: ease 0.2s;
     margin: 0.5rem;
   }
+
 
   
   

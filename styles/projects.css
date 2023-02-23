@@ -1225,8 +1225,9 @@ a:link, a:visited {
     transition: ease 0.2s;
     font-size: 1.5em;
     line-height: 3rem;
-    padding-bottom: 25rem;
+    padding-bottom: 0rem;
     margin-bottom: 0rem;
+    margin-top: 0rem;
   }
   
   
@@ -1250,8 +1251,8 @@ a:link, a:visited {
     align-items: center;
     height: 50%;
     width: 50%;
-    padding: 5rem; 
-    margin-top: 7rem;
+    padding: 0rem; 
+    margin-top: 0rem;
   }
   
   .footer-wrapper .images {
@@ -1504,7 +1505,8 @@ a:link, a:visited {
       align-items: center;
       justify-content: center;
       background-color: #072E5B;
-      margin-bottom: -25rem;
+      margin-bottom: 0rem;
+      margin-top: -28rem
     }
 
   
